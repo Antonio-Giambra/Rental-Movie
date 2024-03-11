@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Movie</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="pop.png">
+</head>
+<body>
+    <!--   Header    -->
+    <header class="header">
+        <div class="header-container">
+            <h1 class="project-title">CCT Rental Movie</h1>
+            <input class="search" type="text" placeholder="Search.."/>
+        </div>
+    </header>
+    <!--  Carousel display box  -->
+    <div class="carrousel" id="container1">
+        <div class="back button-carousel"><p class="backward">&lt</p></div>
+        <div class="carrousel-image">
+            <img class="picture" id="4" src="https://i.ytimg.com/vi/Pf3Njr97siM/maxresdefault.jpg" alt="">
+            <h3 class="carousel-title">The Hunger Games</h3>
+        </div>
+        <div class="forth button-carousel"><p class="forward">&gt</p></div>
+    </div>
+    <!--        Movie Content box     -->
+    <div class="movieInfo-container">
+        <div class="escape-container">
+            <p class="escape">x</p>
+        </div>
+        <div class="movie-content">
+            <h4 id="trailer-title">Trailer</h4>
+            <div class="movie-video">
+            </div>
+            <div class="movie-content-firstLine">
+                <img src="" alt="" class="movie-img"></img>
+                <div class="movie-title"></div>
+            </div>
+            <div class="movie-content-secondLine">
+                <p class="movie-runtime space"></p>
+                <p class="movie-genre space"></p>
+                <p class="movie-year space"></p>
+                <p class="movie-age space"></p>
+                <p class="movie-director space"></p>
+                <p class="movie-actors space"></p>
+                <p class="movie-synopsis space"></p>
+            </div>
+            <a href="#myForm" class="booking">Book now</a>
+        </div>
+    </div>
+    <!--                Form box             -->
+    <form class="form" id="myForm">
+        <h3 class="form-detail">Introduce your personal information</h3>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" required/><span class="firstN"></span>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" required/><span class="lastN"></span>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" required/><span class="emailA"></span>
+        <label for="cinema">Choose your cinema</label>
+        <select id="cinema" required>
+            <option class="option" value="cinema">Select a Cinema</option>
+            <option class="option" value="Dundrum SC">Dundrum SC</option>
+            <option class="option" value="Ovni Sc">Ovni SC</option>
+            <option class="option" value="Claire Hall SC">Claire Hall SC</option>
+        </select><span class="cine"></span>
+        <label for="time">Choose the time</label>
+        <select id="time" required>
+            <option class="option" value="time">Time</option>
+            <option class="option" value="13:00">13:00</option>
+            <option class="option" value="15:30">15:30</option>
+            <option class="option" value="17:25">17:25</option>
+            <option class="option" value="20:40">20:40</option>
+            <option class="option" value="22:40">22:20</option>
+        </select><span class="tim"></span>
+        <label for="ticketQuantity">Ticket Amount</label>
+        <input id="ticketQuantity" type="number" min="1" max="10" required/><span class="ticketQ"></span>
+        <div class="button-section">
+            <input type="button" class="setButton cancel" value="Cancel" />
+            <input type="submit" class="setButton book" value="Book Ticket" />
+        </div>
+    </form>
+    <!--     Movie Catalog    -->
+        <h4 id="movieList-title">Screenings for Dublin</h4>
+
+    <div class="movies-list"></div>
+    <!--     Footer      -->
+    <footer>
+        <div class="college-container">
+            <img class="college-logo" src="https://www.cct.ie/wp-content/uploads/CCT_Logo_New_Aug_17-289x100.png" alt="" />
+        </div>
+            <div class="badge-container">
+                <div class="badge">
+                    <img class="student-picture" src="ana.jpg" alt="Ana Claudia"/>
+                    <p class="student-name">Ana Claudia de Proenca</p>
+                </div>
+                <div class="badge">
+                    <img class="student-picture" src="antonio.jpg" alt="Antonio Giambra"/>
+                    <p class="student-name">Antonio Giambra</p>
+                </div>
+            </div>
+    </footer>
+</body>
+<!--       Script      -->
+<script src="ca1.js"></script>
+</html>
